@@ -1,0 +1,46 @@
+/* Made an AI background that I needed to center and have the image not repeat */
+body {
+    background-image: url('https://cdn.gencraft.com/prod/user/17976578-6975-415c-9ac8-d20af2d38fab/065492e8-8821-428e-805f-a2dd5651a61d/image/image1_0.jpg?Expires=1710441030&Signature=Xy5L4W8jtilnKKJ86WE5sBgwAvT0CtaQWQ0sjpfcrEyOi2jXSvDY3pDGNV1HD5dtucxcJDtWM-kAZBrxPb9SvwFOLjmDu~yPz-PeR0tdrldEgmcHkeeGSu1GC7Yl0rU3eNkWZYE159z9yFgCOgMvqTpZhD7p862W79CghbXEGgrimIhoG1K82q5FVdiUgPH7GHdjF~AyuPqQOpqA6ZfP2Ykx6hWpiCAiVyvhG0CkcT1MiAihdq8CzltAMy6QHv8yxUf~GKTJ4zzEEyMP0Zy2zDj82RS6paECcGVp9zOIOkxjbrHohpB1E3L-g04Dsb1csuxXTofxISgOQGAH3ikn9g__&Key-Pair-Id=K3RDDB1TZ8BHT8');
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire background area */
+    background-position: center; /* Center the background image */
+  }
+  
+  /* Container is all of the things displayed on screen. Centered all elements in container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: whitesmoke; 
+    font-family: fantasy;
+    
+  }
+  
+  /* First section of container, I want to be bigger than the rest of the text and prevent background image from making it hard to read */
+  #label {
+    margin-top: 5px;
+    backdrop-filter: blur(5px);
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 28px
+  }
+
+  /* Second section that deals with weight input, slightly smaller */
+  #planets, #weight-prompt, #user-weight, #calculate-button {
+  margin: 5px;
+  font-size: 20px;
+}
+  /* Wanted output to be slightly more eye-catching and prevent background image from making it hard to read*/
+  #output {
+  font-size: 22px;
+  margin-top: 5px;
+  backdrop-filter: blur(5px);
+  padding: 2px;
+  border-radius: 10px;
+}
+
+
+  
+  
